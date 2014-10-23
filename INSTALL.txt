@@ -1,0 +1,20 @@
+Frost Installation
+
+Version 0.1
+
+Author: Isaac DeSouza
+
+Copyright IDS LABS 2014
+
+=====================================================================
+
+-Untar file on your computer
+-To transfer file to ICCE box. Connect and log on
+-IP USB 192.168.7.2
+-IP Ethernet: 192.168.1.123
+
+from folder where Frost is
+
+scp -r FROST\ user@address:\home\user\destination
+
+Contact at support@ids-labs.me for any support.

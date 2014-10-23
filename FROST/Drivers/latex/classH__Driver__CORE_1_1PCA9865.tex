@@ -1,0 +1,69 @@
+\hypertarget{classH__Driver__CORE_1_1PCA9865}{}\section{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E.\+P\+C\+A9865 Class Reference}
+\label{classH__Driver__CORE_1_1PCA9865}\index{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E.\+P\+C\+A9865@{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E.\+P\+C\+A9865}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classH__Driver__CORE_1_1PCA9865_ad55ae8ab9ca6bd8381edde60fcf886c1}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classH__Driver__CORE_1_1PCA9865_a746e1e3746dec4f182484e4dddeea50a}{set\+Freq}
+\item 
+def \hyperlink{classH__Driver__CORE_1_1PCA9865_a5724a0ad0d377db94c552640986a8cba}{\+\_\+\+\_\+calc\+\_\+prescale\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classH__Driver__CORE_1_1PCA9865_ac22b8744829ffb2e6eda8bdeea34e398}{}{\bfseries i2c}\label{classH__Driver__CORE_1_1PCA9865_ac22b8744829ffb2e6eda8bdeea34e398}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classH__Driver__CORE_1_1PCA9865_a2318d8d4faca392d39776aed8ab66ebc}{}int {\bfseries F\+R\+E\+Q\+\_\+\+M\+I\+N} = 50\label{classH__Driver__CORE_1_1PCA9865_a2318d8d4faca392d39776aed8ab66ebc}
+
+\item 
+\hypertarget{classH__Driver__CORE_1_1PCA9865_ae8e739fb7135848ec137f39bf49bb458}{}int {\bfseries F\+R\+E\+Q\+\_\+\+M\+A\+X} = 300\label{classH__Driver__CORE_1_1PCA9865_ae8e739fb7135848ec137f39bf49bb458}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classH__Driver__CORE_1_1PCA9865_ad55ae8ab9ca6bd8381edde60fcf886c1}{}\index{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865@{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865@{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E.\+P\+C\+A9865.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{busnum = {\ttfamily -\/1}, }
+\item[{}]{debug = {\ttfamily False}, }
+\item[{}]{port}
+\end{DoxyParamCaption}
+)}\label{classH__Driver__CORE_1_1PCA9865_ad55ae8ab9ca6bd8381edde60fcf886c1}
+\begin{DoxyVerb}When creating driver objects the port for the device must be specified. Ports are integers values from 1 - 2. Returns nothing.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classH__Driver__CORE_1_1PCA9865_a5724a0ad0d377db94c552640986a8cba}{}\index{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865@{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865}!\+\_\+\+\_\+calc\+\_\+prescale\+\_\+\+\_\+@{\+\_\+\+\_\+calc\+\_\+prescale\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+calc\+\_\+prescale\+\_\+\+\_\+@{\+\_\+\+\_\+calc\+\_\+prescale\+\_\+\+\_\+}!H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865@{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865}}
+\subsubsection[{\+\_\+\+\_\+calc\+\_\+prescale\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E.\+P\+C\+A9865.\+\_\+\+\_\+calc\+\_\+prescale\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{freq}
+\end{DoxyParamCaption}
+)}\label{classH__Driver__CORE_1_1PCA9865_a5724a0ad0d377db94c552640986a8cba}
+\begin{DoxyVerb}Converts the input frequency into the appropriate values for the PCA9865 driver. See PCA9865 datasheet for more information.
+\end{DoxyVerb}
+ \hypertarget{classH__Driver__CORE_1_1PCA9865_a746e1e3746dec4f182484e4dddeea50a}{}\index{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865@{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865}!set\+Freq@{set\+Freq}}
+\index{set\+Freq@{set\+Freq}!H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865@{H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E\+::\+P\+C\+A9865}}
+\subsubsection[{set\+Freq}]{\setlength{\rightskip}{0pt plus 5cm}def H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E.\+P\+C\+A9865.\+set\+Freq (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{freq}
+\end{DoxyParamCaption}
+)}\label{classH__Driver__CORE_1_1PCA9865_a746e1e3746dec4f182484e4dddeea50a}
+\begin{DoxyVerb}Sets the oscillator frequency for the PCA9865 driver. Frequency values from 50 to 300 are allowed.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+\_\+\+Driver\+\_\+\+C\+O\+R\+E.\+py\end{DoxyCompactItemize}

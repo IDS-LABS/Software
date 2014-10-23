@@ -1,0 +1,123 @@
+\hypertarget{classH__Motor__CORE_1_1DC}{}\section{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E.\+D\+C Class Reference}
+\label{classH__Motor__CORE_1_1DC}\index{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E.\+D\+C@{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E.\+D\+C}}
+
+
+This class defines types of supported motor drivers and methods to use them.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classH__Motor__CORE_1_1DC_a04d237d3d2a38ca8add958048a37523e}{}def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+}\label{classH__Motor__CORE_1_1DC_a04d237d3d2a38ca8add958048a37523e}
+
+\item 
+def \hyperlink{classH__Motor__CORE_1_1DC_acd439ffea6f20a26da0f225dba5bdd85}{set\+Pololu\+V\+N\+H5019}
+\begin{DoxyCompactList}\small\item\em This motor driver requires 3 pins for control. \end{DoxyCompactList}\item 
+def \hyperlink{classH__Motor__CORE_1_1DC_a38e3d04b91ee44f3530727543be157d0}{set\+Pololu\+H\+P\+D}
+\begin{DoxyCompactList}\small\item\em This motor driver requires 3 pins for control. \end{DoxyCompactList}\item 
+def \hyperlink{classH__Motor__CORE_1_1DC_adaee491549e4965a5a1e8faa74b4ee71}{set\+Up\+Servo}
+\begin{DoxyCompactList}\small\item\em This connects to the servo directly to the P\+C\+A9865 driver. \end{DoxyCompactList}\item 
+def \hyperlink{classH__Motor__CORE_1_1DC_ad2cb6c12f26d6808deb4950afde67ddc}{set\+Motor\+Power}
+\begin{DoxyCompactList}\small\item\em Sets the power from 0 to 100 \% for motor defined. \end{DoxyCompactList}\item 
+def \hyperlink{classH__Motor__CORE_1_1DC_a19a817bfef9199ea2d5381795d055764}{set\+Servo\+Power}
+\begin{DoxyCompactList}\small\item\em Set the pulse width for the servo. \end{DoxyCompactList}\item 
+\hypertarget{classH__Motor__CORE_1_1DC_a370617fd03b40cc02ece7eef897cf962}{}def {\bfseries \+\_\+\+\_\+send\+Command\+\_\+\+\_\+}\label{classH__Motor__CORE_1_1DC_a370617fd03b40cc02ece7eef897cf962}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classH__Motor__CORE_1_1DC_aa22dfe3baf364d70a559c4579380b3fe}{}{\bfseries i2c}\label{classH__Motor__CORE_1_1DC_aa22dfe3baf364d70a559c4579380b3fe}
+
+\item 
+\hypertarget{classH__Motor__CORE_1_1DC_a01b37b502c890d24f8d1472374f560bc}{}{\bfseries pin\+\_\+\+P\+W\+M}\label{classH__Motor__CORE_1_1DC_a01b37b502c890d24f8d1472374f560bc}
+
+\item 
+\hypertarget{classH__Motor__CORE_1_1DC_a5763cdfce0d6369e293f57e62dcfbf1f}{}{\bfseries S\+E\+T\+\_\+\+U\+P}\label{classH__Motor__CORE_1_1DC_a5763cdfce0d6369e293f57e62dcfbf1f}
+
+\item 
+\hypertarget{classH__Motor__CORE_1_1DC_a34f87307e6792c35a76387ec598c7981}{}{\bfseries M\+O\+T\+O\+R\+\_\+\+C\+L\+A\+S\+S}\label{classH__Motor__CORE_1_1DC_a34f87307e6792c35a76387ec598c7981}
+
+\item 
+\hypertarget{classH__Motor__CORE_1_1DC_a0d70d40078d326896c4d24e0652abaf2}{}{\bfseries motor\+Type}\label{classH__Motor__CORE_1_1DC_a0d70d40078d326896c4d24e0652abaf2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class defines types of supported motor drivers and methods to use them. 
+
+It must be initialized with a valid i2c port. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classH__Motor__CORE_1_1DC_ad2cb6c12f26d6808deb4950afde67ddc}{}\index{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C@{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C}!set\+Motor\+Power@{set\+Motor\+Power}}
+\index{set\+Motor\+Power@{set\+Motor\+Power}!H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C@{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C}}
+\subsubsection[{set\+Motor\+Power}]{\setlength{\rightskip}{0pt plus 5cm}def H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E.\+D\+C.\+set\+Motor\+Power (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{duty, }
+\item[{}]{direction}
+\end{DoxyParamCaption}
+)}\label{classH__Motor__CORE_1_1DC_ad2cb6c12f26d6808deb4950afde67ddc}
+
+
+Sets the power from 0 to 100 \% for motor defined. 
+
+Direction is -\/1 or 1 \hypertarget{classH__Motor__CORE_1_1DC_a38e3d04b91ee44f3530727543be157d0}{}\index{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C@{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C}!set\+Pololu\+H\+P\+D@{set\+Pololu\+H\+P\+D}}
+\index{set\+Pololu\+H\+P\+D@{set\+Pololu\+H\+P\+D}!H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C@{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C}}
+\subsubsection[{set\+Pololu\+H\+P\+D}]{\setlength{\rightskip}{0pt plus 5cm}def H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E.\+D\+C.\+set\+Pololu\+H\+P\+D (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{pin\+\_\+dir, }
+\item[{}]{pin\+\_\+\+P\+W\+M\+H, }
+\item[{}]{pin\+\_\+\+P\+W\+M\+L, }
+\item[{}]{i2c\+\_\+num}
+\end{DoxyParamCaption}
+)}\label{classH__Motor__CORE_1_1DC_a38e3d04b91ee44f3530727543be157d0}
+
+
+This motor driver requires 3 pins for control. 
+
+pin\+\_\+\+P\+W\+M\+H, pin\+\_\+\+P\+W\+M\+L, pin\+\_\+\+D\+I\+R correspond to the P\+W\+M\+H, P\+W\+M\+L, D\+I\+R pins on the respectively and which pins on the P\+C\+A9865 driver it is connected to. Refer to datasheets for more information. \hypertarget{classH__Motor__CORE_1_1DC_acd439ffea6f20a26da0f225dba5bdd85}{}\index{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C@{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C}!set\+Pololu\+V\+N\+H5019@{set\+Pololu\+V\+N\+H5019}}
+\index{set\+Pololu\+V\+N\+H5019@{set\+Pololu\+V\+N\+H5019}!H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C@{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C}}
+\subsubsection[{set\+Pololu\+V\+N\+H5019}]{\setlength{\rightskip}{0pt plus 5cm}def H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E.\+D\+C.\+set\+Pololu\+V\+N\+H5019 (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{pin\+\_\+\+I\+N\+A, }
+\item[{}]{pin\+\_\+\+I\+N\+B, }
+\item[{}]{pin\+\_\+\+P\+W\+M}
+\end{DoxyParamCaption}
+)}\label{classH__Motor__CORE_1_1DC_acd439ffea6f20a26da0f225dba5bdd85}
+
+
+This motor driver requires 3 pins for control. 
+
+pin\+\_\+\+I\+N\+A, pin\+\_\+\+I\+N\+B, pin\+\_\+\+P\+W\+M correspond to the I\+N\+A, I\+N\+B, P\+W\+M pins respectively and which pins on the P\+C\+A9865 driver it is connected to. Refer to datasheets for more information. \hypertarget{classH__Motor__CORE_1_1DC_a19a817bfef9199ea2d5381795d055764}{}\index{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C@{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C}!set\+Servo\+Power@{set\+Servo\+Power}}
+\index{set\+Servo\+Power@{set\+Servo\+Power}!H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C@{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C}}
+\subsubsection[{set\+Servo\+Power}]{\setlength{\rightskip}{0pt plus 5cm}def H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E.\+D\+C.\+set\+Servo\+Power (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{duty}
+\end{DoxyParamCaption}
+)}\label{classH__Motor__CORE_1_1DC_a19a817bfef9199ea2d5381795d055764}
+
+
+Set the pulse width for the servo. 
+
+\hypertarget{classH__Motor__CORE_1_1DC_adaee491549e4965a5a1e8faa74b4ee71}{}\index{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C@{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C}!set\+Up\+Servo@{set\+Up\+Servo}}
+\index{set\+Up\+Servo@{set\+Up\+Servo}!H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C@{H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E\+::\+D\+C}}
+\subsubsection[{set\+Up\+Servo}]{\setlength{\rightskip}{0pt plus 5cm}def H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E.\+D\+C.\+set\+Up\+Servo (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{pin\+\_\+\+P\+W\+M}
+\end{DoxyParamCaption}
+)}\label{classH__Motor__CORE_1_1DC_adaee491549e4965a5a1e8faa74b4ee71}
+
+
+This connects to the servo directly to the P\+C\+A9865 driver. 
+
+The pin\+\_\+\+P\+W\+M is the pin on the P\+C\+A9865 driver it is connected to. Refer to datasheets for more information. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+\_\+\+Motor\+\_\+\+C\+O\+R\+E.\+py\end{DoxyCompactItemize}
