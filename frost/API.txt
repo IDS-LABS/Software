@@ -1,0 +1,57 @@
+API :
+	- Client:
+		
+	- ICCE:
+
+Architecture:
+	- Client:
+
+	- ICCE:
+		N:Network Daemon:
+			//Serial,RS232/485,ethernet,Wifi,bluetooth,zigbee,ttl 5/3.3V, USB
+			Global:
+				addProtocol(Protocol)
+				removeProtocol(Protocol)
+				Var: Protocols
+			Specific Channel (XXX=Channel Type):
+				CreateChannel(...)
+				DeleteChannel(...)
+				Var channels, threads
+			Sub-Classes:
+				Protocol:
+					Var: messageType
+					isProtocol(msg)
+					parseProtocol(msg)
+					encodeProtocol(msg_params)
+				Message:
+					Var: ProtocolType, protocolVars
+				Channel:
+					Var: type, recvMessage
+					SendMessage(...)
+					Bool gotMessage(...)
+				Thread:
+					Var: Channel, recvMessage
+					addProtocoll(...)
+					removeProtocoll(...)
+					StartSendChannel(...)
+					StopSendChannel(...)
+					StartRecvChannel(...)
+					StopRecvChannel(...)
+		C:Controller(processing):
+		M:(ROVER MODEL)Model:
+			updateModel()
+			isDifferentValue()
+			Var: Base Module
+			Subclass:
+				Module:
+					Var: values(map),parents[],children[]
+					isDifferent()
+					isDifferentValue()
+					Update()
+					UpdateValue()
+					addParent()
+					addChild()
+		W:(CONSTRAINTS ON MODEL)Middleware
+		H:(DRIVER)Hardware Interface
+Tech
+	
